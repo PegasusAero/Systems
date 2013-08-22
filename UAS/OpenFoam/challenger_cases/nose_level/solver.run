@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "CASE: $CASE"
+echo "NP:  $NP"
+echo "SOLVER:  $SOLVER"
+SOLVER_LOG=$CASE/log/$SOLVER.log
+
+$SOLVER -case $CASE | tee $SOLVER_LOG
+$SHELL

@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "CASE: $CASE"
+echo "NP:   $NP"
+BLOCK_LOG=$CASE/log/blockMesh.log
+SNAPPY_LOG=$CASE/log/snappyHexMesh.log
+
+blockMesh -dict system/blockMeshDict -case $CASE | tee $BLOCK_LOG
+snappyHexMesh -overwrite -case $CASE | tee $SNAPPY_LOG
+$SHELL

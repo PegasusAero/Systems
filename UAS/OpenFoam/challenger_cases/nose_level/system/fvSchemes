@@ -1,0 +1,81 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|       o          |                                                          |
+|    o     o       | HelyxOS                                                  |
+|   o   O   o      | Version: v1.0.3                                           |
+|    o     o       | Web:     http://www.engys.com                            |
+|       o          |                                                          |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object fvSchemes;
+}
+
+    ddtSchemes
+    {
+        default Euler;
+    }
+
+    gradSchemes
+    {
+        default Gauss linear;
+        grad(nuTilda) cellLimited Gauss linear 1;
+        grad(k) cellLimited Gauss linear 1;
+        grad(kl) cellLimited Gauss linear 1;
+        grad(omega) cellLimited Gauss linear 1;
+        grad(epsilon) cellLimited Gauss linear 1;
+        grad(q) cellLimited Gauss linear 1;
+        grad(zeta) cellLimited Gauss linear 1;
+        grad(v2) cellLimited Gauss linear 1;
+        grad(f) cellLimited Gauss linear 1;
+        grad(sqrt(kt)) cellLimited Gauss linear 1;
+        grad(kt) cellLimited Gauss linear 1;
+        grad(sqrt(kl)) cellLimited Gauss linear 1;
+    }
+
+    divSchemes
+    {
+        default bounded Gauss linear;
+        div(phi,U) bounded Gauss linearUpwindV grad(U);
+        div(phi,k) bounded Gauss upwind;
+        div(phi,epsilon) bounded Gauss upwind;
+        div(phi,omega) bounded Gauss linearUpwind grad(omega);
+        div(phi,nuTilda) bounded Gauss linearUpwind grad(nuTilda);
+        div(phi,T) bounded Gauss limitedLinear 1;
+        div(phi,kl) bounded Gauss limitedLinear 1;
+        div(phi,R) bounded Gauss upwind;
+        div(R) bounded Gauss linear;
+        div((nuEff*dev(T(grad(U))))) Gauss linear;
+        div(phi,e) bounded Gauss upwind;
+        div(nonlinearStress) Gauss linear;
+        div(phi,zeta) bounded Gauss linearUpwind grad(zeta);
+        div(phi,q) bounded Gauss linearUpwind grad(q);
+        div(phi,kt) bounded Gauss limitedLinear 1;
+        div(phi,v2) bounded Gauss linearUpwind grad(v2);
+        div(phi,f) bounded Gauss linearUpwind grad(f);
+    }
+
+    interpolationSchemes
+    {
+        default linear;
+        interpolate(HbyA) linear;
+    }
+
+    laplacianSchemes
+    {
+        default Gauss linear limited 0.333;
+    }
+
+    snGradSchemes
+    {
+        default limited 0.333;
+    }
+
+    fluxRequired
+    {
+        default no;
+        p ;
+    }

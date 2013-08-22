@@ -1,0 +1,62 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|       o          |                                                          |
+|    o     o       | HelyxOS                                                  |
+|   o   O   o      | Version: v1.0.3                                           |
+|    o     o       | Web:     http://www.engys.com                            |
+|       o          |                                                          |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    location 0;
+    object nut;
+}
+
+    boundaryField
+    {
+        ffminx
+        {
+            type zeroGradient;
+        }
+
+        ffmaxx
+        {
+            type zeroGradient;
+        }
+
+        ffminy
+        {
+            type nutUSpaldingWallFunction;
+            value uniform 0.001;
+        }
+
+        ffmaxy
+        {
+            type nutUSpaldingWallFunction;
+            value uniform 0.001;
+        }
+
+        ffminz
+        {
+            type nutUSpaldingWallFunction;
+            value uniform 0.001;
+        }
+
+        ffmaxz
+        {
+            type nutUSpaldingWallFunction;
+            value uniform 0.001;
+        }
+
+        challenger_level_solid0
+        {
+            type nutUSpaldingWallFunction;
+            value uniform 0.001;
+        }
+
+    }
+
+    dimensions [ 0 2 -1 0 0 0 0 ];
+    internalField uniform 0.001;

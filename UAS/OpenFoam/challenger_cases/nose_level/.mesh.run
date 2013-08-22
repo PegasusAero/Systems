@@ -1,0 +1,6 @@
+#!/bin/bash
+TERMINAL="gnome-terminal --disable-factory --geometry 80x40 -x "
+FILE=/home/balurdo/OpenFOAM/balurdo-2.2.1/run/level/mesh.run
+echo "    TERMINAL  : $TERMINAL"
+echo "    SCRIPT    : $FILE"
+$TERMINAL $FILE

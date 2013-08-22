@@ -1,0 +1,64 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|       o          |                                                          |
+|    o     o       | HelyxOS                                                  |
+|   o   O   o      | Version: v1.0.3                                           |
+|    o     o       | Web:     http://www.engys.com                            |
+|       o          |                                                          |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class volScalarField;
+    location 0;
+    object epsilon;
+}
+
+    boundaryField
+    {
+        ffminx
+        {
+            type turbulentMixingLengthDissipationRateInlet;
+            value uniform 0.01;
+            mixingLength 0.002;
+        }
+
+        ffmaxx
+        {
+            type zeroGradient;
+        }
+
+        ffminy
+        {
+            type epsilonWallFunction;
+            value uniform 1e-7;
+        }
+
+        ffmaxy
+        {
+            type epsilonWallFunction;
+            value uniform 1e-7;
+        }
+
+        ffminz
+        {
+            type epsilonWallFunction;
+            value uniform 1e-7;
+        }
+
+        ffmaxz
+        {
+            type epsilonWallFunction;
+            value uniform 1e-7;
+        }
+
+        challenger_level_solid0
+        {
+            type epsilonWallFunction;
+            value uniform 1e-7;
+        }
+
+    }
+
+    dimensions [ 0 2 -3 0 0 0 0 ];
+    internalField uniform 0.01;

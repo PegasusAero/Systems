@@ -1,0 +1,2664 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.2.1-57f3c3617a2d
+Exec   : snappyHexMesh -overwrite -case /home/balurdo/OpenFOAM/balurdo-2.2.1/run/level
+Date   : Aug 22 2013
+Time   : 13:23:32
+Host   : "balurdo-VirtualBox"
+PID    : 4304
+Case   : /home/balurdo/OpenFOAM/balurdo-2.2.1/run/level
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Disallowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read mesh in = 0.07 s
+
+Overall mesh bounding box  : (-50 -35 -12) (50 35 12)
+Relative tolerance         : 1e-06
+Absolute matching distance : 0.0001244025723
+
+Reading refinement surfaces.
+Read refinement surfaces in = 0.04 s
+
+Reading refinement shells.
+Read refinement shells in = 0 s
+
+Setting refinement level of surface to be consistent with shells.
+Checked shell refinement in = 0 s
+
+Reading features.
+Read features in = 0 s
+
+
+Determining initial surface intersections
+-----------------------------------------
+
+Edge intersection testing:
+    Number of edges             : 65770
+    Number of edges to retest   : 65770
+    Number of intersected edges : 369
+Calculated surface intersections in = 0.12 s
+
+Initial mesh : cells:21000  faces:65770  points:23868
+Cells per refinement level:
+    0	21000
+
+Adding patches for surface regions
+----------------------------------
+
+Patch	Type	Region
+-----	----	------
+challenger_level:
+
+6	wall	challenger_level_solid0
+
+Added patches in = 0 s
+
+Selecting decompositionMethod none
+
+Refinement phase
+----------------
+
+Found point (-5 0 0) in cell 9622 on processor 0
+
+Surface refinement iteration 0
+------------------------------
+
+Marked for refinement due to surface intersection          : 572 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0.02 s
+Selected for refinement : 572 cells (out of 21000)
+Edge intersection testing:
+    Number of edges             : 79288
+    Number of edges to retest   : 18427
+    Number of intersected edges : 1357
+Refined mesh in = 0.07 s
+After refinement surface refinement iteration 0 : cells:25004  faces:79288  points:29489
+Cells per refinement level:
+    0	20428
+    1	4576
+
+Surface refinement iteration 1
+------------------------------
+
+Marked for refinement due to surface intersection          : 1967 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0.01 s
+Selected for refinement : 2179 cells (out of 25004)
+Edge intersection testing:
+    Number of edges             : 129601
+    Number of edges to retest   : 66575
+    Number of intersected edges : 6649
+Refined mesh in = 0.16 s
+After refinement surface refinement iteration 1 : cells:40257  faces:129601  points:49433
+Cells per refinement level:
+    0	20206
+    1	4395
+    2	15656
+
+Surface refinement iteration 2
+------------------------------
+
+Marked for refinement due to surface intersection          : 216 cells.
+Marked for refinement due to curvature/regions             : 5073 cells.
+Determined cells to refine in = 0.02 s
+Selected for refinement : 6066 cells (out of 40257)
+Edge intersection testing:
+    Number of edges             : 271504
+    Number of edges to retest   : 192535
+    Number of intersected edges : 24933
+Refined mesh in = 0.48 s
+After refinement surface refinement iteration 2 : cells:82719  faces:271504  points:107091
+Cells per refinement level:
+    0	20007
+    1	5193
+    2	16935
+    3	40584
+
+Surface refinement iteration 3
+------------------------------
+
+Marked for refinement due to surface intersection          : 16 cells.
+Marked for refinement due to curvature/regions             : 677 cells.
+Determined cells to refine in = 0.05 s
+Selected for refinement : 936 cells (out of 82719)
+Edge intersection testing:
+    Number of edges             : 293047
+    Number of edges to retest   : 47865
+    Number of intersected edges : 26252
+Refined mesh in = 0.33 s
+After refinement surface refinement iteration 3 : cells:89271  faces:293047  points:115562
+Cells per refinement level:
+    0	19933
+    1	5600
+    2	17738
+    3	46000
+
+Surface refinement iteration 4
+------------------------------
+
+Marked for refinement due to surface intersection          : 1 cells.
+Marked for refinement due to curvature/regions             : 131 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 216 cells (out of 89271)
+Edge intersection testing:
+    Number of edges             : 298117
+    Number of edges to retest   : 11870
+    Number of intersected edges : 26422
+Refined mesh in = 0.31 s
+After refinement surface refinement iteration 4 : cells:90783  faces:298117  points:117626
+Cells per refinement level:
+    0	19909
+    1	5731
+    2	18095
+    3	47048
+
+Surface refinement iteration 5
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 55 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 98 cells (out of 90783)
+Edge intersection testing:
+    Number of edges             : 300406
+    Number of edges to retest   : 5471
+    Number of intersected edges : 26557
+Refined mesh in = 0.28 s
+After refinement surface refinement iteration 5 : cells:91469  faces:300406  points:118555
+Cells per refinement level:
+    0	19894
+    1	5823
+    2	18264
+    3	47488
+
+Surface refinement iteration 6
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 51 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 81 cells (out of 91469)
+Edge intersection testing:
+    Number of edges             : 302320
+    Number of edges to retest   : 4350
+    Number of intersected edges : 26696
+Refined mesh in = 0.29 s
+After refinement surface refinement iteration 6 : cells:92036  faces:302320  points:119347
+Cells per refinement level:
+    0	19888
+    1	5847
+    2	18405
+    3	47896
+
+Surface refinement iteration 7
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 51 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 93 cells (out of 92036)
+Edge intersection testing:
+    Number of edges             : 304498
+    Number of edges to retest   : 5180
+    Number of intersected edges : 26837
+Refined mesh in = 0.31 s
+After refinement surface refinement iteration 7 : cells:92687  faces:304498  points:120236
+Cells per refinement level:
+    0	19873
+    1	5940
+    2	18570
+    3	48304
+
+Surface refinement iteration 8
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 50 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 80 cells (out of 92687)
+Edge intersection testing:
+    Number of edges             : 306364
+    Number of edges to retest   : 4358
+    Number of intersected edges : 26968
+Refined mesh in = 0.3 s
+After refinement surface refinement iteration 8 : cells:93247  faces:306364  points:120988
+Cells per refinement level:
+    0	19866
+    1	5973
+    2	18704
+    3	48704
+
+Surface refinement iteration 9
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 50 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 78 cells (out of 93247)
+Edge intersection testing:
+    Number of edges             : 308155
+    Number of edges to retest   : 4151
+    Number of intersected edges : 27102
+Refined mesh in = 0.29 s
+After refinement surface refinement iteration 9 : cells:93793  faces:308155  points:121690
+Cells per refinement level:
+    0	19860
+    1	5999
+    2	18830
+    3	49104
+
+Surface refinement iteration 10
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 40 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 52 cells (out of 93793)
+Edge intersection testing:
+    Number of edges             : 309322
+    Number of edges to retest   : 2755
+    Number of intersected edges : 27142
+Refined mesh in = 0.29 s
+After refinement surface refinement iteration 10 : cells:94157  faces:309322  points:122123
+Cells per refinement level:
+    0	19858
+    1	6005
+    2	18870
+    3	49424
+
+Surface refinement iteration 11
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 12 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 16 cells (out of 94157)
+Edge intersection testing:
+    Number of edges             : 309652
+    Number of edges to retest   : 1072
+    Number of intersected edges : 27142
+Refined mesh in = 0.3 s
+After refinement surface refinement iteration 11 : cells:94269  faces:309652  points:122224
+Cells per refinement level:
+    0	19858
+    1	6001
+    2	18890
+    3	49520
+
+Surface refinement iteration 12
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0.06 s
+Selected for refinement : 0 cells (out of 94269)
+Stopping refining since too few cells selected.
+
+
+Removing mesh beyond surface intersections
+------------------------------------------
+
+Found point (-5 0 0) in cell 9622 in global region 0 out of 54 regions.
+Keeping all cells in region 0 containing point (-5 0 0)
+Selected for keeping : 90952 cells.
+Edge intersection testing:
+    Number of edges             : 302135
+    Number of edges to retest   : 6941
+    Number of intersected edges : 27142
+
+Shell refinement iteration 0
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.39 s
+Selected for internal refinement : 1539 cells (out of 90952)
+Edge intersection testing:
+    Number of edges             : 334778
+    Number of edges to retest   : 95663
+    Number of intersected edges : 27532
+Refined mesh in = 0.39 s
+After refinement shell refinement iteration 0 : cells:101725  faces:334778  points:132007
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	17571
+    3	58396
+
+Shell refinement iteration 1
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.05 s
+Selected for internal refinement : 0 cells (out of 101725)
+Stopping refining since too few cells selected.
+
+
+Splitting mesh at surface intersections
+---------------------------------------
+
+Introducing baffles for 27532 faces that are intersected by the surface.
+
+Edge intersection testing:
+    Number of edges             : 362310
+    Number of edges to retest   : 176589
+    Number of intersected edges : 54883
+Created baffles in = 0.39 s
+
+
+After introducing baffles : cells:101725  faces:362310  points:132007
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	17571
+    3	58396
+
+Introducing baffles to block off problem cells
+----------------------------------------------
+
+markFacesOnProblemCells : marked 23193 additional internal faces to be converted into baffles.
+Analyzed problem cells in = 0.25 s
+
+
+Introducing baffles to delete problem cells.
+
+Edge intersection testing:
+    Number of edges             : 385503
+    Number of edges to retest   : 78445
+    Number of intersected edges : 54886
+Created baffles in = 0.32 s
+
+
+After introducing baffles : cells:101725  faces:385503  points:132007
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	17571
+    3	58396
+
+Remove unreachable sections of mesh
+-----------------------------------
+
+Keeping all cells in region 0 containing point (-5 0 0)
+Selected for keeping : 81523 cells.
+Edge intersection testing:
+    Number of edges             : 283139
+    Number of edges to retest   : 0
+    Number of intersected edges : 27532
+Split mesh in = 0.32 s
+
+
+After subsetting : cells:81523  faces:283139  points:118847
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+
+Handling cells with snap problems
+---------------------------------
+
+Introducing baffles for 27532 faces that are intersected by the surface.
+
+Edge intersection testing:
+    Number of edges             : 283139
+    Number of edges to retest   : 102654
+    Number of intersected edges : 27532
+Created baffles in = 0.26 s
+
+
+After introducing baffles : cells:81523  faces:283139  points:118847
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+
+Introducing baffles to block off problem cells
+----------------------------------------------
+
+markFacesOnProblemCells : marked 0 additional internal faces to be converted into baffles.
+Analyzed problem cells in = 0.17 s
+
+
+Introducing baffles to delete problem cells.
+
+Edge intersection testing:
+    Number of edges             : 283139
+    Number of edges to retest   : 0
+    Number of intersected edges : 27532
+Created baffles in = 0.15 s
+
+
+After introducing baffles : cells:81523  faces:283139  points:118847
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+
+Remove unreachable sections of mesh
+-----------------------------------
+
+Keeping all cells in region 0 containing point (-5 0 0)
+Selected for keeping : 81523 cells.
+Edge intersection testing:
+    Number of edges             : 283139
+    Number of edges to retest   : 0
+    Number of intersected edges : 27532
+Split mesh in = 0.23 s
+
+
+After subsetting : cells:81523  faces:283139  points:118847
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+dupNonManifoldPoints : Found : 1523 non-manifold points (out of 118847)
+Edge intersection testing:
+    Number of edges             : 283139
+    Number of edges to retest   : 0
+    Number of intersected edges : 27532
+getDuplicateFaces : found 21 pairs of duplicate faces.
+
+Detected unsplittable baffles : 21
+Edge intersection testing:
+    Number of edges             : 283118
+    Number of edges to retest   : 21
+    Number of intersected edges : 27511
+Merged free-standing baffles in = 0.48 s.
+
+Merge refined boundary faces
+----------------------------
+
+Merging 189 sets of faces.
+
+Edge intersection testing:
+    Number of edges             : 282781
+    Number of edges to retest   : 1405
+    Number of intersected edges : 27175
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Merging all points on surface that
+- are used by only two boundary faces and
+- make an angle with a cosine of more than 0.7071067812.
+
+Removing 228 straight edge points ...
+
+Edge intersection testing:
+    Number of edges             : 282781
+    Number of edges to retest   : 1710
+    Number of intersected edges : 27175
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Refined mesh : cells:81523  faces:282781  points:120087
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+Writing mesh to time constant
+Wrote mesh in = 1.43 s.
+Mesh refined in = 8.88 s.
+
+Morphing phase
+--------------
+
+
+Snapping to features in 10 iterations ...
+Constructing mesh displacer ...
+Using mesh parameters 
+{
+    maxNonOrtho     65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave      80;
+    minFlatness     0.5;
+    minVol          1e-13;
+    minTetQuality   -1e+30;
+    minArea         -1;
+    minTwist        0.02;
+    minDeterminant  0.001;
+    minFaceWeight   0.02;
+    minVolRatio     0.01;
+    minTriangleTwist -1;
+    nSmoothScale    4;
+    errorReduction  0.75;
+}
+
+
+Checking initial mesh ...
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Detected 0 illegal faces (concave, zero area or negative cell pyramid volume)
+Checked initial mesh in = 0.33 s
+
+
+Smoothing patch points ...
+Smoothing iteration 0
+Found 3065 non-mainfold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Smoothing iteration 1
+Found 0 non-mainfold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Smoothing iteration 2
+Found 0 non-mainfold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Patch points smoothed in = 1.08 s
+
+
+
+Morph iteration 0
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.04398216394 min:0 max:0.2149508469
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1463928068 0.1958965403 0.1653056516) avg:(-0.0007873861469 2.221016549e-05 -0.007600980031)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (8.338482701e-05 -9.307996161e-05 0.0004144672926) at mesh point 54682 coord (29.93643493 -0.296180196 -0.007321527839) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.55 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.35 s
+
+
+
+Morph iteration 1
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.04128773524 min:1.151293436e-19 max:0.2076156137
+Calculated surface displacement in = 0.04 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1450845296 0.1891828992 0.1611032191) avg:(-0.000740809449 1.996003849e-05 -0.006823899908)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.000264260624 -0.0002301597785 0.0007066800001) at mesh point 54682 coord (29.93651832 -0.2962732759 -0.006907060546) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.55 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.35 s
+
+
+
+Morph iteration 2
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.03607153174 min:1.733133874e-19 max:0.190963263
+Calculated surface displacement in = 0.04 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.142577038 0.1740586985 0.151574885) avg:(-0.0006524548386 1.622612816e-05 -0.005414502509)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.0005688660735 -0.0004032427522 0.0008594670883) at mesh point 54682 coord (29.93678258 -0.2965034357 -0.006200380546) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.53 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.37 s
+
+
+
+Morph iteration 3
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.02911393883 min:2.618897285e-19 max:0.1731044056
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1390787715 0.150333084 0.1364536227) avg:(-0.0005243495334 6.843500235e-06 -0.003746199001)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.001008718222 -0.0006168678337 0.0008626365526) at mesh point 54682 coord (29.93735145 -0.2969066785 -0.005340913458) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.54 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.35 s
+
+
+
+Morph iteration 4
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.02154424622 min:2.359944807e-20 max:0.1657724052
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.134856436 0.1195230844 0.1189250299) avg:(-0.0003973853254 -3.980635272e-06 -0.002170127625)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (-0.0009101489111 0.0005217335282 0.001232159796) at mesh point 54682 coord (29.93836016 -0.2975235463 -0.004478276905) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.55 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.34 s
+
+
+
+Morph iteration 5
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.01439922561 min:2.117699885e-19 max:0.1481757379
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1301519115 0.09673702712 0.1003924718) avg:(-0.0002686306826 -9.77832264e-06 -0.001013501397)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (-0.0001788210314 0.0002678485292 0.001048209047) at mesh point 54682 coord (29.93745002 -0.2970018128 -0.003246117109) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.59 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 2
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 2
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 2
+Moving mesh using displacement scaling : min:0.5625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 2
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 3
+Moving mesh using displacement scaling : min:0.421875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.92 s
+
+
+
+Morph iteration 6
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.008549363218 min:1.665587396e-18 max:0.1315218223
+Calculated surface displacement in = 0.02 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1250401103 0.08457606672 0.08579255515) avg:(-0.0001679241663 -8.009800696e-06 -0.0003384280155)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.0006393869184 9.91943407e-05 0.0008242268464) at mesh point 54682 coord (29.93727119 -0.2967339642 -0.002197908061) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.65 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 12
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 8
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 2
+Moving mesh using displacement scaling : min:0.5625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 6
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 3
+Moving mesh using displacement scaling : min:0.421875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 6
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 4
+Moving mesh using displacement scaling : min:0.31640625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 6
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 5
+Displacement scaling for error reduction set to 0.
+Moving mesh using displacement scaling : min:0.2373046875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 6
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 6
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.51 s
+
+
+
+Morph iteration 7
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.004442159788 min:4.813741467e-19 max:0.1208355876
+Calculated surface displacement in = 0.02 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1193760315 0.07022776417 0.0790544946) avg:(-9.764191684e-05 -1.218722777e-05 -5.443547377e-05)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.001305259018 -9.157415857e-05 0.0006502170199) at mesh point 54682 coord (29.93791058 -0.2966347699 -0.001373681215) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 3.03 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 4
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 23
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 4
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 20
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 2
+Moving mesh using displacement scaling : min:0.5625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 20
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 3
+Moving mesh using displacement scaling : min:0.421875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 19
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 4
+Moving mesh using displacement scaling : min:0.31640625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 15
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 5
+Displacement scaling for error reduction set to 0.
+Moving mesh using displacement scaling : min:0.2373046875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 13
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 6
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.97 s
+
+
+
+Morph iteration 8
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.002076555155 min:3.412516126e-19 max:0.114286404
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1129059546 0.06461360702 0.0758189643) avg:(-5.413219402e-05 -1.14008168e-05 2.067467198e-05)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.001835029189 -0.0001195782079 0.0004319629747) at mesh point 54682 coord (29.93915844 -0.2967223167 -0.0007520601057) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 3.17 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 6
+    faces with concavity >  80 degrees                     : 3
+    faces with skewness >   4 (internal) or  20 (boundary) : 6
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 39
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 4
+    faces with concavity >  80 degrees                     : 1
+    faces with skewness >   4 (internal) or  20 (boundary) : 2
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 29
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 2
+Moving mesh using displacement scaling : min:0.5625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 2
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 4
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 27
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 3
+Moving mesh using displacement scaling : min:0.421875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 1
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 3
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 25
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 4
+Moving mesh using displacement scaling : min:0.31640625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 2
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 25
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 5
+Displacement scaling for error reduction set to 0.
+Moving mesh using displacement scaling : min:0.2373046875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 2
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 23
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 6
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 2.03 s
+
+
+
+Morph iteration 9
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+Wanted displacement : average:0.001054506716 min:2.585292284e-18 max:0.1062564293
+Calculated surface displacement in = 0.03 s
+
+
+Overriding displacement on features :
+   implicit features    : false
+   explicit features    : true
+   multi-patch features : false
+
+Stringing feature edges : changed 0 points
+Attraction:
+     linear   : max:(0.1049729728 0.06461360702 0.0758189643) avg:(-2.8951585e-05 -9.346748914e-06 2.716335697e-05)
+     feature  : max:(0 0 0) avg:(0 0 0)
+Feature analysis : total points:27648 attraction to :
+    feature point   : 0
+    feature edge    : 0
+    nearest surface : 0
+    rest            : 27648
+
+--> FOAM Warning : Displacement (0.06146705483 -0.07324499508 0.03943048871) at mesh point 25101 coord (29.90155257 -0.1044528325 0.1316545203) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Iteration 30
+Iteration 40
+Iteration 50
+Iteration 60
+Iteration 70
+Iteration 80
+Iteration 90
+Iteration 100
+Iteration 110
+Iteration 120
+Iteration 130
+Iteration 140
+Iteration 150
+Iteration 160
+Iteration 170
+Iteration 180
+Iteration 190
+Iteration 200
+Iteration 210
+Iteration 220
+Iteration 230
+Iteration 240
+Iteration 250
+Iteration 260
+Iteration 270
+Iteration 280
+Iteration 290
+Displacement smoothed in = 2.91 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 18
+    faces with concavity >  80 degrees                     : 9
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 69
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 10
+    faces with concavity >  80 degrees                     : 10
+    faces with skewness >   4 (internal) or  20 (boundary) : 6
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 49
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 2
+Moving mesh using displacement scaling : min:0.5625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 9
+    faces with concavity >  80 degrees                     : 5
+    faces with skewness >   4 (internal) or  20 (boundary) : 1
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 45
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 3
+Moving mesh using displacement scaling : min:0.421875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 4
+    faces with concavity >  80 degrees                     : 1
+    faces with skewness >   4 (internal) or  20 (boundary) : 6
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 41
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 4
+Moving mesh using displacement scaling : min:0.31640625  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 4
+    faces with concavity >  80 degrees                     : 1
+    faces with skewness >   4 (internal) or  20 (boundary) : 4
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 34
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 5
+Displacement scaling for error reduction set to 0.
+Moving mesh using displacement scaling : min:0.2373046875  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 2
+    faces with concavity >  80 degrees                     : 1
+    faces with skewness >   4 (internal) or  20 (boundary) : 2
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 30
+    faces on cells with determinant < 0.001                : 0
+
+Iteration 6
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 2.22 s
+
+
+Repatching faces according to nearest surface ...
+Repatched 0 faces in = 0.11 s
+
+
+Edge intersection testing:
+    Number of edges             : 282781
+    Number of edges to retest   : 124379
+    Number of intersected edges : 27451
+Merging 2408 sets of faces.
+
+Edge intersection testing:
+    Number of edges             : 279872
+    Number of edges to retest   : 9912
+    Number of intersected edges : 24551
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Merging all points on surface that
+- are used by only two boundary faces and
+- make an angle with a cosine of more than 0.8660254038.
+
+Removing 1747 straight edge points ...
+
+Edge intersection testing:
+    Number of edges             : 279872
+    Number of edges to retest   : 8727
+    Number of intersected edges : 24550
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Snapped mesh : cells:81523  faces:279872  points:117839
+Cells per refinement level:
+    0	19823
+    1	5935
+    2	16440
+    3	39325
+Writing mesh to time constant
+Wrote mesh in = 2.17 s.
+Mesh snapped in = 41.47 s.
+Layer thickness specified as final layer and expansion ratio.
+
+Shrinking and layer addition phase
+----------------------------------
+
+Using mesh parameters 
+{
+    maxNonOrtho     65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave      80;
+    minFlatness     0.5;
+    minVol          1e-13;
+    minTetQuality   -1e+30;
+    minArea         -1;
+    minTwist        0.02;
+    minDeterminant  0.001;
+    minFaceWeight   0.02;
+    minVolRatio     0.01;
+    minTriangleTwist -1;
+    nSmoothScale    4;
+    errorReduction  0.75;
+}
+
+
+
+Merging all faces of a cell
+---------------------------
+    - which are on the same patch
+    - which make an angle < 60 degrees
+      (cos:0.5)
+    - as long as the resulting face doesn't become concave by more than 90 degrees
+      (0=straight, 180=fully concave)
+
+Merging 335 sets of faces.
+
+Edge intersection testing:
+    Number of edges             : 279483
+    Number of edges to retest   : 1579
+    Number of intersected edges : 24166
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 7
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 24
+    faces on cells with determinant < 0.001                : 0
+Masters that need to be restored:31
+Edge intersection testing:
+    Number of edges             : 279514
+    Number of edges to retest   : 186
+    Number of intersected edges : 24198
+
+
+Undo iteration 1
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Merging all points on surface that
+- are used by only two boundary faces and
+- make an angle with a cosine of more than 0.5.
+
+Removing 294 straight edge points ...
+
+Edge intersection testing:
+    Number of edges             : 279514
+    Number of edges to retest   : 1656
+    Number of intersected edges : 24186
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+
+Checking mesh manifoldness ...
+Outside of mesh is multiply connected across edges or points.
+This is not a fatal error but might cause some unexpected behaviour.
+Writing 18 points where this happens to pointSet nonManifoldPoints
+
+Checking initial mesh ...
+Checking faces in error :
+    non-orthogonality >  65 degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity >  80 degrees                     : 0
+    faces with skewness >   4 (internal) or  20 (boundary) : 0
+    faces with interpolation weights (0..1)  <  0.02       : 0
+    faces with volume ratio of neighbour cells <  0.01     : 0
+    faces with face twist <  0.02                          : 0
+    faces on cells with determinant < 0.001                : 0
+Detected 0 illegal faces (concave, zero area or negative cell pyramid volume)
+
+Adding in total 0 inter-processor patches to handle extrusion of non-manifold processor boundaries.
+Constructing mesh displacer ...
+
+Handling points with inconsistent layer specification ...
+
+Handling non-manifold points ...
+
+Checking patch manifoldness ...
+Outside of local patch is multiply connected across edges or points at 18 points.
+Set displacement to zero for all 18 non-manifold points
+
+Handling feature edges ...
+
+Handling cells with warped patch faces ...
+Set displacement to zero on 29 warped faces since layer would be > 0.5 of the size of the bounding box.
+
+patch                   faces    layers avg thickness[m]
+                                        near-wall overall
+-----                   -----    ------ --------- -------
+ffminx                  420      1      0.6       0.6     
+ffmaxx                  420      1      0.6       0.6     
+ffminy                  681      1      0.538     0.538   
+ffmaxy                  681      1      0.538     0.538   
+ffminz                  1750     1      0.6       0.6     
+ffmaxz                  1831     1      0.579     0.579   
+challenger_level_solid0 24049    3      7.56      8.4     
+
+medialAxisSmoothingInfo : Calculate distance to Medial Axis ...
+shrinkMeshDistance : Smoothing normals ...
+    Iteration 0   residual 0.0721
+shrinkMeshDistance : Smoothing normals ...
+shrinkMeshDistance : Smoothing normals in interior ...
+    Iteration 0   residual 0.101
+
+Layer addition iteration 0
+--------------------------
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+
+Determining displacement for added points according to pointNormal ...
+No valid normal for point 54175 (29.9 -0.295 -0.00131); setting displacement to (-6.58 -1.79 4.49)
+No valid normal for point 4727 (20 5.14 -8); setting displacement to (4.52 6.77 -0.707)
+No valid normal for point 50712 (20.2 5.17 -7.96); setting displacement to (6.08 4.84 2.53)
+No valid normal for point 6308 (19.9 -4.94 -5.97); setting displacement to (-2.81 6.99 -3.17)
+No valid normal for point 73740 (19.9 -4.79 -5.77); setting displacement to (-8.02 1.28 -0.851)
+No valid normal for point 50766 (20.2 5.15 -6.03); setting displacement to (5.91 5.07 -2.48)
+No valid normal for point 50711 (19.8 5.17 -7.96); setting displacement to (-5.86 5.14 2.45)
+No valid normal for point 76129 (19.9 -3.21 -4.24); setting displacement to (-6.92 -2.61 3.47)
+No valid normal for point 101824 (19.9 -2.79 -3.71); setting displacement to (2.47 -4.1 6.62)
+No valid normal for point 77685 (30 -0.684 1.82); setting displacement to (-7.7 1.92 1.94)
+No valid normal for point 92445 (29.8 -0.774 2.24); setting displacement to (8.15 -0.541 -0.182)
+No valid normal for point 23753 (19 5.86 -7); setting displacement to (-0.683 -6.93 4.28)
+No valid normal for point 52810 (19 5.83 -7.23); setting displacement to (2.44 -5.17 -5.83)
+No valid normal for point 26804 (19 5.14 -7); setting displacement to (-0.619 7.18 3.84)
+No valid normal for point 56417 (19 5.17 -7.23); setting displacement to (2.46 5.13 -5.86)
+No valid normal for point 23754 (21 5.86 -7); setting displacement to (0.706 -6.77 -4.52)
+No valid normal for point 52815 (21 5.83 -7.23); setting displacement to (-2.53 -4.84 -6.08)
+No valid normal for point 24333 (20 5.86 -8); setting displacement to (4.52 -6.77 -0.706)
+No valid normal for point 53496 (20.2 5.83 -7.96); setting displacement to (6.07 -4.85 2.52)
+No valid normal for point 26807 (21 5.14 -7); setting displacement to (0.681 7 -4.16)
+No valid normal for point 56421 (21 5.17 -7.23); setting displacement to (-2.53 4.83 -6.08)
+No valid normal for point 38872 (19.8 -4.48 -5.52); setting displacement to (-6.11 4.22 -3.41)
+No valid normal for point 68732 (19.9 -4.2 -5.49); setting displacement to (-7.79 -1.99 1.47)
+No valid normal for point 113784 (19.9 -4.36 -5.63); setting displacement to (1.37 -4.83 6.44)
+No valid normal for point 56433 (19.9 -4.05 -5.28); setting displacement to (-2.88 -7.06 2.93)
+No valid normal for point 56434 (19.9 -4.21 -5.06); setting displacement to (0.409 6.75 -4.58)
+No valid normal for point 24407 (20 5.86 -6); setting displacement to (-3.91 -7.14 0.649)
+No valid normal for point 53553 (20.2 5.83 -6.04); setting displacement to (5.83 -5.18 -2.44)
+No valid normal for point 53495 (19.8 5.83 -7.96); setting displacement to (-5.84 -5.16 2.45)
+No valid normal for point 114590 (19.8 -5.61 -6.87); setting displacement to (6.49 4.81 1.21)
+No valid normal for point 109519 (19.9 -5.63 -6.89); setting displacement to (-5.94 2.47 5.03)
+No valid normal for point 83421 (19.9 -5.21 -6.75); setting displacement to (-6.41 -3.03 4.05)
+No valid normal for point 114599 (19.9 -5.61 -6.83); setting displacement to (0.996 6.97 -4.15)
+No valid normal for point 68662 (19.9 -5.48 -6.74); setting displacement to (-7.52 3.2 -0.0844)
+No valid normal for point 83504 (19.8 5.25 -6.9); setting displacement to (4.6 0.133 6.75)
+No valid normal for point 52813 (19 5.83 -6.77); setting displacement to (2.53 -4.83 6.09)
+No valid normal for point 56419 (19 5.17 -6.77); setting displacement to (2.65 4.37 6.37)
+No valid normal for point 53552 (19.8 5.83 -6.04); setting displacement to (-6.11 -4.79 -2.54)
+No valid normal for point 52819 (21 5.83 -6.77); setting displacement to (-2.45 -5.16 5.84)
+No valid normal for point 56424 (21 5.17 -6.77); setting displacement to (-2.49 5.01 5.95)
+No valid normal for point 68769 (19.9 -3.79 -4.52); setting displacement to (-7.95 1.37 -1.27)
+No valid normal for point 114627 (19.9 -3.63 -4.37); setting displacement to (4.06 4.95 -5.07)
+No valid normal for point 63971 (19.8 -3.47 -4.27); setting displacement to (-5.56 5.28 -2.82)
+No valid normal for point 53740 (30 -1.84 -2.24); setting displacement to (-3.76 7.18 -1.01)
+No valid normal for point 81228 (29.8 -0.971 -0.775); setting displacement to (8.15 0.437 -0.28)
+No valid normal for point 77012 (24.9 -21.7 1.8); setting displacement to (-7.72 2.43 1.08)
+No valid normal for point 86081 (25.7 -3.94 1.8); setting displacement to (-5.33 0.855 6.13)
+No valid normal for point 86238 (26 -1.79 1.81); setting displacement to (-4.04 5.9 -3.94)
+No valid normal for point 86462 (26 1.8 1.81); setting displacement to (-4.05 -5.84 -4.03)
+No valid normal for point 57069 (30 2.14 0.748); setting displacement to (-1.56 7.94 -1.13)
+No valid normal for point 86625 (25.7 3.94 1.8); setting displacement to (-5.33 -0.855 6.13)
+No valid normal for point 78467 (24.9 21.7 1.8); setting displacement to (-7.72 -2.43 1.08)
+No valid normal for point 30735 (20.4 5.15 -7.89); setting displacement to (-4.3 -0.427 6.93)
+No valid normal for point 63919 (20.6 5.18 -7.82); setting displacement to (4.5 -0.0978 -6.82)
+No valid normal for point 63946 (19.9 -4.64 -5.62); setting displacement to (3.42 5.14 -5.35)
+No valid normal for point 30734 (19.6 5.15 -7.9); setting displacement to (4.29 -0.402 6.94)
+No valid normal for point 63917 (19.4 5.18 -7.82); setting displacement to (-4.48 -0.0586 -6.83)
+No valid normal for point 63957 (19.9 5.18 -6.58); setting displacement to (2.43 -6.13 -4.82)
+No valid normal for point 63958 (19.4 5.17 -6.18); setting displacement to (-4.34 -0.0483 6.92)
+No valid normal for point 30883 (19.6 5.15 -6.1); setting displacement to (4.29 -0.361 -6.94)
+No valid normal for point 30884 (20.4 5.16 -6.1); setting displacement to (-4.27 -0.309 -6.96)
+No valid normal for point 63961 (20.6 5.17 -6.18); setting displacement to (4.36 0.0493 6.91)
+No valid normal for point 63968 (19.9 -3.35 -4.39); setting displacement to (2.85 -4.91 5.87)
+No valid normal for point 93891 (19.9 -2.65 -3.1); setting displacement to (1.54 6.69 -4.43)
+No valid normal for point 99166 (19.9 -2.79 -3.26); setting displacement to (-6.14 4.68 -2.67)
+No valid normal for point 99168 (19.9 -2.34 -3.15); setting displacement to (1.45 -6.19 5.13)
+No valid normal for point 116102 (30 -0.887 -1.22); setting displacement to (4.84 -5.6 3.46)
+No valid normal for point 76502 (29.8 -0.735 -0.509); setting displacement to (8.15 -0.522 -0.0433)
+No valid normal for point 102454 (29.8 -1.03 2.73); setting displacement to (8.11 -0.775 -0.555)
+No valid normal for point 99964 (45.1 -7.99 8.26); setting displacement to (-8.01 0.0457 -1.59)
+No valid normal for point 100108 (45.1 7.99 8.26); setting displacement to (-8.01 -0.0536 -1.59)
+No valid normal for point 33033 (21 -6.36 -7); setting displacement to (0.7 6.84 -4.42)
+No valid normal for point 66531 (21 -6.33 -7.23); setting displacement to (-2.53 4.84 -6.07)
+No valid normal for point 38779 (20.9 -6.35 -7.42); setting displacement to (-6.93 -0.429 4.31)
+No valid normal for point 57900 (20.8 -6.32 -7.56); setting displacement to (6.81 -0.0901 -4.51)
+No valid normal for point 30698 (20 -6.36 -8); setting displacement to (-4.13 7.01 -0.67)
+No valid normal for point 63906 (20.2 -6.33 -7.96); setting displacement to (5.84 5.16 2.45)
+No valid normal for point 38776 (20.4 -6.35 -7.9); setting displacement to (-4.29 -0.401 6.94)
+No valid normal for point 57898 (20.6 -6.32 -7.82); setting displacement to (4.47 -0.0639 -6.84)
+No valid normal for point 33052 (20.9 5.85 -7.42); setting displacement to (-6.93 0.428 4.3)
+No valid normal for point 66576 (20.8 5.82 -7.56); setting displacement to (6.82 0.0976 -4.5)
+No valid normal for point 76060 (20.7 5.19 -7.7); setting displacement to (-5.72 -1.18 5.72)
+No valid normal for point 68688 (20.8 5.18 -7.56); setting displacement to (6.82 -0.0965 -4.5)
+No valid normal for point 35150 (20.9 5.15 -7.42); setting displacement to (-6.93 -0.427 4.3)
+No valid normal for point 35153 (20.4 5.85 -7.89); setting displacement to (-4.3 0.427 6.93)
+No valid normal for point 68695 (20.6 5.82 -7.82); setting displacement to (4.5 0.0972 -6.82)
+No valid normal for point 39036 (19.9 3.96 -5.04); setting displacement to (0.601 -6.74 -4.58)
+No valid normal for point 98783 (29.9 -1.26 2.99); setting displacement to (8.13 0.601 -0.535)
+No valid normal for point 94843 (30 -1.74 3.83); setting displacement to (-2.61 -1.41 -7.61)
+No valid normal for point 34999 (45 -7.98 8.37); setting displacement to (-2.05 4.17 -6.72)
+No valid normal for point 33027 (19 -6.36 -7); setting displacement to (-0.653 7.23 3.74)
+No valid normal for point 66516 (19 -6.33 -7.23); setting displacement to (2.45 5.15 -5.85)
+No valid normal for point 38773 (19.1 -6.35 -7.42); setting displacement to (6.94 -0.396 4.29)
+No valid normal for point 58751 (19.2 -6.32 -7.56); setting displacement to (-6.84 -0.0577 -4.47)
+No valid normal for point 63909 (19.8 -6.33 -7.96); setting displacement to (-6.08 4.83 2.53)
+No valid normal for point 41466 (19.6 -6.35 -7.89); setting displacement to (4.3 -0.424 6.93)
+No valid normal for point 58753 (19.4 -6.32 -7.82); setting displacement to (-4.51 -0.085 -6.81)
+No valid normal for point 83392 (19.3 -6.31 -7.7); setting displacement to (5.72 -1.16 5.72)
+No valid normal for point 33030 (19 -5.64 -7); setting displacement to (-0.553 -7.83 2.28)
+No valid normal for point 66523 (19 -5.67 -7.23); setting displacement to (2.7 -4.22 -6.46)
+No valid normal for point 41502 (19.1 -5.65 -7.42); setting displacement to (6.97 0.323 4.26)
+No valid normal for point 58758 (19.2 -5.68 -7.56); setting displacement to (-6.82 0.0708 -4.5)
+No valid normal for point 30707 (20 -5.64 -8); setting displacement to (-3.21 -7.49 -0.583)
+No valid normal for point 63910 (19.8 -5.67 -7.96); setting displacement to (-6.64 -3.89 2.76)
+No valid normal for point 58756 (19.4 -5.68 -7.82); setting displacement to (-4.53 0.104 -6.8)
+No valid normal for point 41470 (19.6 -5.65 -7.89); setting displacement to (4.27 0.353 6.95)
+No valid normal for point 83402 (19.3 -5.69 -7.7); setting displacement to (5.73 1.04 5.73)
+No valid normal for point 66518 (19 -6.33 -6.77); setting displacement to (2.53 4.83 6.08)
+No valid normal for point 41507 (19.1 -6.35 -6.58); setting displacement to (6.93 -0.427 -4.3)
+No valid normal for point 58762 (19.2 -6.32 -6.44); setting displacement to (-6.82 -0.0962 4.5)
+No valid normal for point 30750 (20 -6.36 -6); setting displacement to (-3.98 7.1 0.655)
+No valid normal for point 63930 (19.8 -6.33 -6.04); setting displacement to (-6.09 4.83 -2.53)
+No valid normal for point 58765 (19.4 -6.32 -6.18); setting displacement to (-4.5 -0.094 6.82)
+No valid normal for point 41511 (19.6 -6.34 -6.11); setting displacement to (4.3 -0.425 -6.93)
+No valid normal for point 83409 (19.3 -6.31 -6.3); setting displacement to (5.72 -1.18 -5.72)
+No valid normal for point 66525 (19 -5.67 -6.77); setting displacement to (2.61 -4.59 6.24)
+No valid normal for point 58768 (19.2 -5.68 -6.44); setting displacement to (-6.8 0.142 4.52)
+No valid normal for point 41512 (19.1 -5.66 -6.58); setting displacement to (6.93 0.418 -4.3)
+No valid normal for point 30759 (20 -5.65 -6); setting displacement to (-2.68 -7.7 0.529)
+No valid normal for point 63935 (19.8 -5.66 -6.04); setting displacement to (-6.44 -4.24 -2.69)
+No valid normal for point 41517 (19.6 -5.66 -6.1); setting displacement to (4.3 0.375 -6.93)
+No valid normal for point 58771 (19.4 -5.67 -6.18); setting displacement to (-4.45 0.0554 6.85)
+No valid normal for point 83425 (19.3 -5.69 -6.3); setting displacement to (5.76 1.15 -5.67)
+No valid normal for point 33036 (21 -5.64 -7); setting displacement to (0.691 -6.93 -4.27)
+No valid normal for point 66543 (21 -5.67 -7.23); setting displacement to (-2.54 -4.82 -6.09)
+No valid normal for point 58778 (20.8 -5.68 -7.56); setting displacement to (6.81 0.0915 -4.51)
+No valid normal for point 41520 (20.9 -5.65 -7.42); setting displacement to (-6.93 0.428 4.31)
+No valid normal for point 63911 (20.2 -5.67 -7.96); setting displacement to (5.85 -5.15 2.46)
+No valid normal for point 41476 (20.4 -5.65 -7.9); setting displacement to (-4.29 0.399 6.94)
+No valid normal for point 58776 (20.6 -5.68 -7.82); setting displacement to (4.47 0.0622 -6.84)
+No valid normal for point 83437 (20.7 -5.69 -7.7); setting displacement to (-5.72 1.17 5.72)
+No valid normal for point 66534 (21 -6.33 -6.77); setting displacement to (-2.45 5.16 5.84)
+No valid normal for point 58786 (20.8 -6.32 -6.44); setting displacement to (6.83 -0.0564 4.48)
+No valid normal for point 41525 (20.9 -6.35 -6.58); setting displacement to (-6.94 -0.403 -4.29)
+No valid normal for point 63927 (20.2 -6.33 -6.04); setting displacement to (5.84 5.16 -2.45)
+No valid normal for point 38850 (20.4 -6.35 -6.1); setting displacement to (-4.29 -0.403 -6.94)
+No valid normal for point 58784 (20.6 -6.32 -6.18); setting displacement to (4.48 -0.055 6.83)
+No valid normal for point 83448 (20.7 -6.31 -6.3); setting displacement to (-5.72 -1.16 -5.72)
+No valid normal for point 66546 (21 -5.67 -6.77); setting displacement to (-2.47 -5.08 5.9)
+No valid normal for point 41530 (20.9 -5.65 -6.58); setting displacement to (-6.94 0.4 -4.29)
+No valid normal for point 58794 (20.8 -5.68 -6.44); setting displacement to (6.82 0.0954 4.5)
+No valid normal for point 63936 (20.2 -5.66 -6.04); setting displacement to (6 -4.94 -2.53)
+No valid normal for point 41532 (20.4 -5.66 -6.1); setting displacement to (-4.31 0.367 -6.93)
+No valid normal for point 58796 (20.6 -5.67 -6.18); setting displacement to (4.44 0.0276 6.86)
+No valid normal for point 76025 (3.8 0.311 -7.7); setting displacement to (5.72 1.18 5.72)
+No valid normal for point 58802 (3.68 0.322 -7.56); setting displacement to (-6.82 0.0977 -4.5)
+No valid normal for point 29115 (3.61 0.345 -7.42); setting displacement to (6.93 0.428 4.3)
+No valid normal for point 63915 (3.94 0.322 -7.82); setting displacement to (-4.5 0.0978 -6.82)
+No valid normal for point 30717 (4.08 0.345 -7.89); setting displacement to (4.3 0.428 6.93)
+No valid normal for point 41539 (3.5 0.358 -7); setting displacement to (-0.706 -6.77 -4.52)
+No valid normal for point 58801 (3.54 0.328 -7.23); setting displacement to (2.53 -4.84 -6.07)
+No valid normal for point 29116 (3.6 0.346 -6.58); setting displacement to (6.93 0.418 -4.3)
+No valid normal for point 58803 (3.54 0.329 -6.77); setting displacement to (2.44 -5.18 5.83)
+No valid normal for point 58805 (3.68 0.321 -6.44); setting displacement to (-6.82 0.0589 4.5)
+No valid normal for point 41481 (4.5 0.358 -8); setting displacement to (-4.52 -6.77 -0.706)
+No valid normal for point 63914 (4.27 0.328 -7.96); setting displacement to (-6.08 -4.84 2.53)
+No valid normal for point 35134 (4.92 0.346 -7.9); setting displacement to (-4.29 0.401 6.94)
+No valid normal for point 68679 (5.06 0.321 -7.82); setting displacement to (4.47 0.0636 -6.84)
+No valid normal for point 68677 (4.73 0.329 -7.96); setting displacement to (5.84 -5.16 2.44)
+No valid normal for point 58812 (5.32 0.322 -7.56); setting displacement to (6.81 0.0894 -4.51)
+No valid normal for point 29118 (5.39 0.345 -7.42); setting displacement to (-6.93 0.429 4.31)
+No valid normal for point 58813 (5.46 0.328 -7.23); setting displacement to (-2.52 -4.85 -6.07)
+No valid normal for point 41547 (5.5 0.358 -7); setting displacement to (0.707 -6.77 -4.52)
+No valid normal for point 83488 (5.2 0.31 -7.7); setting displacement to (-5.72 1.17 5.72)
+No valid normal for point 63949 (4.28 0.327 -6.03); setting displacement to (3.28 -7.48 -0.146)
+No valid normal for point 30825 (4.09 0.342 -6.1); setting displacement to (4.16 0.387 -7.02)
+No valid normal for point 63948 (3.94 0.32 -6.17); setting displacement to (-4.43 0.0021 6.86)
+No valid normal for point 35209 (4.92 0.341 -6.11); setting displacement to (-4.27 0.494 -6.95)
+No valid normal for point 68749 (4.74 0.327 -6.04); setting displacement to (-3.67 -7.3 0.039)
+No valid normal for point 68748 (5.06 0.32 -6.18); setting displacement to (4.55 0.156 6.78)
+No valid normal for point 58818 (5.46 0.329 -6.77); setting displacement to (-2.44 -5.17 5.84)
+No valid normal for point 29120 (5.4 0.346 -6.58); setting displacement to (-6.94 0.415 -4.3)
+No valid normal for point 58820 (5.32 0.321 -6.44); setting displacement to (6.83 0.0856 4.48)
+No valid normal for point 33047 (19.1 5.85 -7.42); setting displacement to (6.94 0.403 4.29)
+No valid normal for point 66566 (19.2 5.82 -7.56); setting displacement to (-6.83 0.0561 -4.48)
+No valid normal for point 76046 (19.3 5.19 -7.7); setting displacement to (5.72 -1.16 5.72)
+No valid normal for point 68685 (19.2 5.18 -7.56); setting displacement to (-6.83 -0.0534 -4.48)
+No valid normal for point 35143 (19.1 5.15 -7.42); setting displacement to (6.94 -0.402 4.29)
+No valid normal for point 68693 (19.4 5.82 -7.82); setting displacement to (-4.48 0.0568 -6.83)
+No valid normal for point 35152 (19.6 5.85 -7.9); setting displacement to (4.29 0.404 6.94)
+No valid normal for point 76082 (19.3 5.81 -7.7); setting displacement to (5.72 1.16 5.72)
+No valid normal for point 66574 (19.2 5.82 -6.44); setting displacement to (-6.82 0.0948 4.5)
+No valid normal for point 33051 (19.1 5.85 -6.58); setting displacement to (6.93 0.429 -4.31)
+No valid normal for point 76054 (19.3 5.19 -6.3); setting displacement to (5.78 -1.13 -5.67)
+No valid normal for point 68751 (19.2 5.18 -6.44); setting displacement to (-6.79 -0.141 4.55)
+No valid normal for point 35213 (19.1 5.16 -6.58); setting displacement to (6.93 -0.418 -4.3)
+No valid normal for point 35222 (19.6 5.85 -6.11); setting displacement to (4.29 0.422 -6.94)
+No valid normal for point 68761 (19.4 5.82 -6.18); setting displacement to (-4.49 0.0821 6.82)
+No valid normal for point 76092 (19.3 5.81 -6.3); setting displacement to (5.72 1.18 -5.72)
+No valid normal for point 33056 (20.9 5.85 -6.58); setting displacement to (-6.94 0.403 -4.29)
+No valid normal for point 66589 (20.8 5.82 -6.44); setting displacement to (6.83 0.0527 4.48)
+No valid normal for point 68754 (20.8 5.18 -6.44); setting displacement to (6.81 -0.0951 4.52)
+No valid normal for point 76071 (20.7 5.19 -6.3); setting displacement to (-5.77 -1.14 -5.67)
+No valid normal for point 35218 (20.9 5.15 -6.58); setting displacement to (-6.94 -0.4 -4.29)
+No valid normal for point 68765 (20.6 5.82 -6.18); setting displacement to (4.48 0.041 6.83)
+No valid normal for point 35223 (20.4 5.85 -6.1); setting displacement to (-4.28 0.398 -6.95)
+No valid normal for point 76106 (20.7 5.81 -6.3); setting displacement to (-5.72 1.16 -5.72)
+No valid normal for point 35701 (30 -1.86 -2.47); setting displacement to (-1.68 6.38 4.83)
+No valid normal for point 41786 (30 -1.63 -2.47); setting displacement to (-2.57 -6.9 3.55)
+No valid normal for point 83794 (30 -1.75 -2.6); setting displacement to (0.0995 0.249 8.17)
+No valid normal for point 39459 (30 -0.522 -0.475); setting displacement to (-6.53 -4.31 2.34)
+No valid normal for point 64808 (25.3 -13 1.8); setting displacement to (-7.15 0.0663 3.95)
+No valid normal for point 70686 (25.4 -9.94 1.8); setting displacement to (-7.65 2.45 1.5)
+No valid normal for point 31456 (30 0.832 0.537); setting displacement to (2.74 -7.59 -1.26)
+No valid normal for point 71866 (25.4 9.94 1.8); setting displacement to (-7.65 -2.45 1.5)
+No valid normal for point 65634 (25.3 13 1.8); setting displacement to (-7.15 -0.0663 3.95)
+No valid normal for point 50893 (19.9 3.11 -4.4); setting displacement to (2.46 6.84 3.73)
+No valid normal for point 101064 (19.9 4.32 -5.91); setting displacement to (0.773 6.26 5.2)
+No valid normal for point 98361 (29.9 -1.49 -1.76); setting displacement to (8.15 0.473 0.352)
+No valid normal for point 31183 (30 -1.54 -1.96); setting displacement to (-7.02 -3.15 2.76)
+No valid normal for point 35288 (20 -2.55 -2.95); setting displacement to (-7.45 3.33 -0.422)
+No valid normal for point 77689 (29.8 -0.509 1.75); setting displacement to (8.17 0.00639 0.0359)
+No valid normal for point 50701 (4.08 -0.345 -7.89); setting displacement to (4.3 -0.428 6.93)
+No valid normal for point 96412 (3.94 -0.322 -7.82); setting displacement to (-4.5 -0.0978 -6.82)
+No valid normal for point 96411 (4.27 -0.328 -7.96); setting displacement to (-6.08 4.84 2.53)
+No valid normal for point 73705 (4.5 -0.358 -8); setting displacement to (-4.52 6.77 -0.706)
+No valid normal for point 96694 (5.06 -0.321 -7.82); setting displacement to (4.47 -0.0636 -6.84)
+No valid normal for point 53468 (4.92 -0.346 -7.9); setting displacement to (-4.29 -0.401 6.94)
+No valid normal for point 96693 (4.73 -0.329 -7.96); setting displacement to (5.84 5.16 2.44)
+No valid normal for point 95049 (19.9 -2.45 -3.29); setting displacement to (-7.54 -2.22 2.23)
+No valid normal for point 96417 (19.9 -2.67 -3.56); setting displacement to (-7.68 -1.12 2.55)
+No valid normal for point 73864 (19.9 -2.57 -3.43); setting displacement to (1.95 -6.38 4.72)
+No valid normal for point 46055 (3.61 -0.345 -7.42); setting displacement to (6.93 -0.428 4.3)
+No valid normal for point 95762 (3.68 -0.322 -7.56); setting displacement to (-6.82 -0.0977 -4.5)
+No valid normal for point 97813 (3.8 -0.311 -7.7); setting displacement to (5.72 -1.18 5.72)
+No valid normal for point 76022 (3.5 -0.358 -7); setting displacement to (-0.706 6.77 -4.52)
+No valid normal for point 95763 (3.54 -0.328 -7.23); setting displacement to (2.53 4.84 -6.07)
+No valid normal for point 94465 (3.94 -0.32 -6.17); setting displacement to (-4.43 0.0103 6.86)
+No valid normal for point 97818 (3.8 -0.309 -6.3); setting displacement to (5.7 -1.17 -5.73)
+No valid normal for point 30795 (4.09 -0.342 -6.1); setting displacement to (4.16 -0.375 -7.02)
+No valid normal for point 95766 (3.68 -0.321 -6.44); setting displacement to (-6.82 -0.0573 4.5)
+No valid normal for point 46056 (3.6 -0.346 -6.58); setting displacement to (6.93 -0.417 -4.3)
+No valid normal for point 95765 (3.54 -0.329 -6.77); setting displacement to (2.44 5.18 5.83)
+No valid normal for point 46057 (5.39 -0.345 -7.42); setting displacement to (-6.93 -0.429 4.31)
+No valid normal for point 95768 (5.32 -0.322 -7.56); setting displacement to (6.81 -0.0894 -4.51)
+No valid normal for point 95771 (5.46 -0.328 -7.23); setting displacement to (-2.52 4.85 -6.07)
+No valid normal for point 76030 (5.5 -0.358 -7); setting displacement to (0.707 6.77 -4.52)
+No valid normal for point 99371 (5.2 -0.31 -7.7); setting displacement to (-5.72 -1.17 5.72)
+No valid normal for point 94464 (4.28 -0.327 -6.03); setting displacement to (3.26 7.49 -0.0762)
+No valid normal for point 35197 (4.92 -0.341 -6.11); setting displacement to (-4.27 -0.486 -6.95)
+No valid normal for point 95032 (5.06 -0.32 -6.18); setting displacement to (4.55 -0.147 6.79)
+No valid normal for point 95031 (4.74 -0.327 -6.04); setting displacement to (-3.66 7.3 0.118)
+No valid normal for point 95775 (5.32 -0.321 -6.44); setting displacement to (6.83 -0.0845 4.48)
+No valid normal for point 46059 (5.4 -0.346 -6.58); setting displacement to (-6.94 -0.415 -4.3)
+No valid normal for point 95774 (5.46 -0.329 -6.77); setting displacement to (-2.44 5.17 5.84)
+No valid normal for point 99385 (5.2 -0.309 -6.3); setting displacement to (-5.71 -1.18 -5.72)
+No valid normal for point 35076 (45 7.98 8.37); setting displacement to (-2.05 -4.17 -6.72)
+No valid normal for point 93024 (29.9 -1.23 -1.27); setting displacement to (8.17 0.213 -0.0313)
+No valid normal for point 100137 (24.4 -33.7 1.79); setting displacement to (-6.58 4.82 0.468)
+No valid normal for point 93064 (24.7 -27.7 1.8); setting displacement to (-7.78 2.23 1.11)
+No valid normal for point 93085 (24.7 27.7 1.8); setting displacement to (-7.78 -2.23 1.11)
+No valid normal for point 100355 (24.4 33.7 1.79); setting displacement to (-6.58 -4.82 0.468)
+No valid normal for point 96316 (29.9 -1.49 3.48); setting displacement to (8.14 -0.35 -0.551)
+No valid normal for point 104196 (19.9 3.8 -5.28); setting displacement to (-3 6.95 3.07)
+No valid normal for point 98327 (19.9 4.39 -5.59); setting displacement to (2.38 -5.89 -5.13)
+No valid normal for point 63954 (19.9 3.54 -4.95); setting displacement to (2.18 4.35 6.56)
+No valid normal for point 105064 (19.9 3.32 -4.68); setting displacement to (1.64 6.36 4.85)
+No valid normal for point 104662 (19.9 3.44 -4.79); setting displacement to (-7.66 1.35 2.5)
+No valid normal for point 81020 (19.9 3.54 -4.51); setting displacement to (-6.2 -3.76 -3.76)
+No valid normal for point 113769 (20.7 -6.31 -7.7); setting displacement to (-5.72 -1.17 5.72)
+No valid normal for point 114600 (20.7 -5.69 -6.3); setting displacement to (-5.76 1.15 -5.68)
+No valid normal for point 112885 (3.8 0.309 -6.3); setting displacement to (5.7 1.17 -5.73)
+No valid normal for point 114606 (5.2 0.309 -6.3); setting displacement to (-5.71 1.19 -5.72)
+No valid normal for point 97809 (19.9 -4.78 -6.21); setting displacement to (0.422 -6.79 4.53)
+No valid normal for point 50836 (19.9 -3.32 -3.95); setting displacement to (-7.72 1.85 -1.94)
+No valid normal for point 50895 (19.9 2.78 -3.96); setting displacement to (3.28 5.51 5.06)
+No valid normal for point 50898 (19.9 2.94 -3.8); setting displacement to (2.04 -5.76 -5.43)
+No valid normal for point 93260 (19.9 3.18 -4.08); setting displacement to (0.836 -6.67 -4.65)
+No valid normal for point 98338 (19.9 -3.21 -3.8); setting displacement to (2.71 4.3 -6.39)
+No valid normal for point 83514 (19.8 5.23 -6.77); setting displacement to (-6.76 -3.27 -3.22)
+No valid normal for point 56436 (19.9 -3.94 -4.72); setting displacement to (-2.78 7.01 -3.15)
+No valid normal for point 56435 (19.9 -3.78 -4.95); setting displacement to (0.383 -6.88 4.39)
+No valid normal for point 56578 (20 2.3 -2.96); setting displacement to (-7.12 -3.94 0.673)
+No valid normal for point 83966 (19.9 2.22 -3.26); setting displacement to (-7.57 -0.0337 3.07)
+No valid normal for point 68813 (19.9 2.33 -3.41); setting displacement to (2.48 4.79 6.14)
+No valid normal for point 30926 (19.9 -3.43 -4.07); setting displacement to (2.38 6.96 -3.55)
+No valid normal for point 63982 (19.9 2.56 -3.7); setting displacement to (3.62 5.31 5.04)
+No valid normal for point 43333 (30 -0.491 1.55); setting displacement to (-7.58 2.71 1.41)
+No valid normal for point 113781 (20.7 5.81 -7.7); setting displacement to (-5.72 1.18 5.72)
+No valid normal for point 63931 (19.9 -5.31 -6.46); setting displacement to (-7.69 1.61 -2.26)
+No valid normal for point 97805 (19.9 -5.21 -6.3); setting displacement to (1.87 4.25 -6.72)
+No valid normal for point 68707 (19.8 5.37 -6.9); setting displacement to (6.65 -4.54 -1.37)
+No valid normal for point 68708 (19.9 5.38 -6.83); setting displacement to (3.1 -5.35 -5.34)
+No valid normal for point 35157 (19.9 5.4 -6.9); setting displacement to (-7.72 0.797 2.56)
+No valid normal for point 92398 (19.8 4.78 -6.23); setting displacement to (7.47 1.5 2.94)
+No valid normal for point 97833 (19.8 4.84 -6.41); setting displacement to (-4.26 5.34 4.48)
+No valid normal for point 96424 (19.9 3.23 -4.52); setting displacement to (-7.92 1.99 -0.152)
+No valid normal for point 55160 (30 -1.44 3.06); setting displacement to (-6.97 3.86 1.82)
+No valid normal for point 93886 (19.9 3.96 -5.48); setting displacement to (-7.82 2.03 1.18)
+No valid normal for point 101067 (19.9 4.11 -5.64); setting displacement to (1.54 4.87 6.38)
+Displacement at illegal point (29.9 -0.295 -0.00131) set to (-4.61 -1.78 2.71)
+Displacement at illegal point (20 5.14 -8) set to (0.0534 2.59 1.26)
+Displacement at illegal point (20.2 5.17 -7.96) set to (-1.02 0.608 2.07)
+Displacement at illegal point (19.9 -4.94 -5.97) set to (1.53 0.301 3.19)
+Displacement at illegal point (19.9 -4.79 -5.77) set to (0.465 0.267 1.66)
+Displacement at illegal point (20.2 5.15 -6.03) set to (-1.29 0.0214 -2.36)
+Displacement at illegal point (19.8 5.17 -7.96) set to (1.05 0.616 2.07)
+Displacement at illegal point (19.9 -3.21 -4.24) set to (-1.13 -1.48 1.33)
+Displacement at illegal point (19.9 -2.79 -3.71) set to (-0.406 -2.06 2.92)
+Displacement at illegal point (30 -0.684 1.82) set to (-3.47 1.65 1.49)
+Displacement at illegal point (29.8 -0.774 2.24) set to (5.13 -1.78 -0.609)
+Displacement at illegal point (19 5.86 -7) set to (1.26 -2.59 0.0623)
+Displacement at illegal point (19 5.83 -7.23) set to (2.07 -0.617 1.05)
+Displacement at illegal point (19 5.14 -7) set to (1.3 2.47 0.127)
+Displacement at illegal point (19 5.17 -7.23) set to (2.08 0.586 1.07)
+Displacement at illegal point (21 5.86 -7) set to (-1.26 -2.59 -0.0575)
+Displacement at illegal point (21 5.83 -7.23) set to (-2.07 -0.609 1.02)
+Displacement at illegal point (20 5.86 -8) set to (0.0558 -2.59 1.26)
+Displacement at illegal point (20.2 5.83 -7.96) set to (-1.02 -0.609 2.07)
+Displacement at illegal point (21 5.14 -7) set to (-1.27 2.55 -0.0321)
+Displacement at illegal point (21 5.17 -7.23) set to (-2.07 0.599 1.03)
+Displacement at illegal point (19.8 -4.48 -5.52) set to (-0.52 1.21 -1.68)
+Displacement at illegal point (19.9 -4.2 -5.49) set to (0.727 -1.31 -0.945)
+Displacement at illegal point (19.9 -4.36 -5.63) set to (0.535 -3.09 2.11)
+Displacement at illegal point (19.9 -4.05 -5.28) set to (0.897 -1.12 -3.06)
+Displacement at illegal point (19.9 -4.21 -5.06) set to (0.404 4.29 -3.69)
+Displacement at illegal point (20 5.86 -6) set to (-0.0693 -2.59 -1.26)
+Displacement at illegal point (20.2 5.83 -6.04) set to (-1.05 -0.618 -2.07)
+Displacement at illegal point (19.8 5.83 -7.96) set to (1.05 -0.617 2.07)
+Displacement at illegal point (19.8 -5.61 -6.87) set to (1.77 2.47 2.58)
+Displacement at illegal point (19.9 -5.63 -6.89) set to (-1.07 3.2 1.4)
+Displacement at illegal point (19.9 -5.21 -6.75) set to (-2.39 -1.24 2.2)
+Displacement at illegal point (19.9 -5.61 -6.83) set to (-0.919 3.71 -0.683)
+Displacement at illegal point (19.9 -5.48 -6.74) set to (-1.98 2.39 0.729)
+Displacement at illegal point (19.8 5.25 -6.9) set to (3.12 -0.905 1.48)
+Displacement at illegal point (19 5.83 -6.77) set to (2.07 -0.609 -1.02)
+Displacement at illegal point (19 5.17 -6.77) set to (2.08 0.579 -1)
+Displacement at illegal point (19.8 5.83 -6.04) set to (1.02 -0.608 -2.07)
+Displacement at illegal point (21 5.83 -6.77) set to (-2.07 -0.617 -1.05)
+Displacement at illegal point (21 5.17 -6.77) set to (-2.07 0.608 -1.05)
+Displacement at illegal point (19.9 -3.79 -4.52) set to (0.903 -0.56 1.49)
+Displacement at illegal point (19.9 -3.63 -4.37) set to (0.814 2.66 -1.27)
+Displacement at illegal point (19.8 -3.47 -4.27) set to (0.829 1.18 -0.316)
+Displacement at illegal point (30 -1.84 -2.24) set to (-1.9 4.68 0.113)
+Displacement at illegal point (29.8 -0.971 -0.775) set to (4.6 2.01 -1.26)
+Displacement at illegal point (24.9 -21.7 1.8) set to (-3.24 1.07 0.404)
+Displacement at illegal point (25.7 -3.94 1.8) set to (-3.88 0.58 2.88)
+Displacement at illegal point (26 -1.79 1.81) set to (-3.47 4.5 -2.63)
+Displacement at illegal point (26 1.8 1.81) set to (-3.47 -4.49 -2.71)
+Displacement at illegal point (30 2.14 0.748) set to (-0.439 2.48 -0.0619)
+Displacement at illegal point (25.7 3.94 1.8) set to (-3.88 -0.58 2.88)
+Displacement at illegal point (24.9 21.7 1.8) set to (-3.24 -1.07 0.404)
+Displacement at illegal point (20.4 5.15 -7.89) set to (-0.122 0.168 0.829)
+Displacement at illegal point (20.6 5.18 -7.82) set to (-0.422 -0.245 -0.0559)
+Displacement at illegal point (19.9 -4.64 -5.62) set to (2.24 1.7 -0.975)
+Displacement at illegal point (19.6 5.15 -7.9) set to (0.13 0.185 0.83)
+Displacement at illegal point (19.4 5.18 -7.82) set to (0.428 -0.228 -0.0567)
+Displacement at illegal point (19.9 5.18 -6.58) set to (-0.0899 -3.51 -3.12)
+Displacement at illegal point (19.4 5.17 -6.18) set to (1.84 -0.404 -1.95)
+Displacement at illegal point (19.6 5.15 -6.1) set to (2.73 -0.209 -4.64)
+Displacement at illegal point (20.4 5.16 -6.1) set to (-0.242 0.00478 -0.908)
+Displacement at illegal point (20.6 5.17 -6.18) set to (-0.49 -0.27 0.0549)
+Displacement at illegal point (19.9 -3.35 -4.39) set to (-0.0753 -3.11 2.65)
+Displacement at illegal point (19.9 -2.65 -3.1) set to (-2.29 3.96 -1.95)
+Displacement at illegal point (19.9 -2.79 -3.26) set to (-2.48 2.12 -0.537)
+Displacement at illegal point (19.9 -2.34 -3.15) set to (-1.76 -3.65 3.46)
+Displacement at illegal point (30 -0.887 -1.22) set to (0.862 -5 4.15)
+Displacement at illegal point (29.8 -0.735 -0.509) set to (5.49 1.23 -0.828)
+Displacement at illegal point (29.8 -1.03 2.73) set to (4.87 -1.86 -1.25)
+Displacement at illegal point (45.1 -7.99 8.26) set to (-4.22 0.141 -0.39)
+Displacement at illegal point (45.1 7.99 8.26) set to (-4.22 -0.139 -0.38)
+Displacement at illegal point (21 -6.36 -7) set to (-1.26 2.59 -0.0575)
+Displacement at illegal point (21 -6.33 -7.23) set to (-2.07 0.609 1.02)
+Displacement at illegal point (20.9 -6.35 -7.42) set to (-0.831 0.171 0.119)
+Displacement at illegal point (20.8 -6.32 -7.56) set to (0.0532 -0.239 0.419)
+Displacement at illegal point (20 -6.36 -8) set to (-0.0595 2.59 1.26)
+Displacement at illegal point (20.2 -6.33 -7.96) set to (-1.05 0.618 2.07)
+Displacement at illegal point (20.4 -6.35 -7.9) set to (-0.133 0.184 0.828)
+Displacement at illegal point (20.6 -6.32 -7.82) set to (-0.432 -0.234 -0.0605)
+Displacement at illegal point (20.9 5.85 -7.42) set to (-0.829 -0.168 0.122)
+Displacement at illegal point (20.8 5.82 -7.56) set to (0.0561 0.245 0.422)
+Displacement at illegal point (20.7 5.19 -7.7) set to (0.205 -0.202 0.411)
+Displacement at illegal point (20.8 5.18 -7.56) set to (-0.00412 -0.117 0.0474)
+Displacement at illegal point (20.9 5.15 -7.42) set to (-3.1 0.158 1.64)
+Displacement at illegal point (20.4 5.85 -7.89) set to (-0.122 -0.169 0.829)
+Displacement at illegal point (20.6 5.82 -7.82) set to (-0.422 0.245 -0.0562)
+Displacement at illegal point (19.9 3.96 -5.04) set to (0.468 -4.14 -3.71)
+Displacement at illegal point (29.9 -1.26 2.99) set to (5.81 -0.973 -0.678)
+Displacement at illegal point (30 -1.74 3.83) set to (-1.15 0.648 -3.63)
+Displacement at illegal point (45 -7.98 8.37) set to (-2.41 3.04 -5.14)
+Displacement at illegal point (19 -6.36 -7) set to (1.26 2.59 0.0569)
+Displacement at illegal point (19 -6.33 -7.23) set to (2.07 0.619 1.05)
+Displacement at illegal point (19.1 -6.35 -7.42) set to (0.828 0.186 0.133)
+Displacement at illegal point (19.2 -6.32 -7.56) set to (-0.06 -0.228 0.432)
+Displacement at illegal point (19.8 -6.33 -7.96) set to (1.02 0.61 2.07)
+Displacement at illegal point (19.6 -6.35 -7.89) set to (0.118 0.173 0.831)
+Displacement at illegal point (19.4 -6.32 -7.82) set to (0.418 -0.234 -0.0525)
+Displacement at illegal point (19.3 -6.31 -7.7) set to (2.05 -0.242 2.05)
+Displacement at illegal point (19 -5.64 -7) set to (1.34 -2.29 -0.0562)
+Displacement at illegal point (19 -5.67 -7.23) set to (2.1 -0.56 1.01)
+Displacement at illegal point (19.1 -5.65 -7.42) set to (0.844 -0.169 0.113)
+Displacement at illegal point (19.2 -5.68 -7.56) set to (-0.0529 0.206 0.424)
+Displacement at illegal point (20 -5.64 -8) set to (-0.196 -2.35 1.32)
+Displacement at illegal point (19.8 -5.67 -7.96) set to (0.977 -0.564 2.09)
+Displacement at illegal point (19.4 -5.68 -7.82) set to (1.8 0.382 1.99)
+Displacement at illegal point (19.6 -5.65 -7.89) set to (2.21 -0.066 3.78)
+Displacement at illegal point (19.3 -5.69 -7.7) set to (2.51 0.263 2.73)
+Displacement at illegal point (19 -6.33 -6.77) set to (2.07 0.608 -1.02)
+Displacement at illegal point (19.1 -6.35 -6.58) set to (0.829 0.168 -0.122)
+Displacement at illegal point (19.2 -6.32 -6.44) set to (-0.0557 -0.244 -0.421)
+Displacement at illegal point (20 -6.36 -6) set to (-0.0596 2.59 -1.26)
+Displacement at illegal point (19.8 -6.33 -6.04) set to (1.02 0.609 -2.07)
+Displacement at illegal point (19.4 -6.32 -6.18) set to (1.82 -0.442 -1.98)
+Displacement at illegal point (19.6 -6.34 -6.11) set to (2.23 0.0534 -3.76)
+Displacement at illegal point (19.3 -6.31 -6.3) set to (2.51 -0.317 -2.73)
+Displacement at illegal point (19 -5.67 -6.77) set to (2.09 -0.536 -1.05)
+Displacement at illegal point (19.2 -5.68 -6.44) set to (2 0.437 -1.8)
+Displacement at illegal point (19.1 -5.66 -6.58) set to (3.78 -0.0305 -2.23)
+Displacement at illegal point (20 -5.65 -6) set to (-0.111 -2.37 -1.32)
+Displacement at illegal point (19.8 -5.66 -6.04) set to (1.01 -0.579 -2.09)
+Displacement at illegal point (19.6 -5.66 -6.1) set to (0.136 -0.16 -0.825)
+Displacement at illegal point (19.4 -5.67 -6.18) set to (0.438 0.23 0.0725)
+Displacement at illegal point (19.3 -5.69 -6.3) set to (2.74 0.305 -2.5)
+Displacement at illegal point (21 -5.64 -7) set to (-1.27 -2.57 -0.0472)
+Displacement at illegal point (21 -5.67 -7.23) set to (-2.07 -0.602 1.03)
+Displacement at illegal point (20.8 -5.68 -7.56) set to (-1.98 0.438 1.81)
+Displacement at illegal point (20.9 -5.65 -7.42) set to (-3.76 -0.0525 2.23)
+Displacement at illegal point (20.2 -5.67 -7.96) set to (-1.09 -0.558 2.09)
+Displacement at illegal point (20.4 -5.65 -7.9) set to (-0.145 -0.164 0.833)
+Displacement at illegal point (20.6 -5.68 -7.82) set to (-0.436 0.239 -0.059)
+Displacement at illegal point (20.7 -5.69 -7.7) set to (-2.73 0.314 2.51)
+Displacement at illegal point (21 -6.33 -6.77) set to (-2.07 0.618 -1.05)
+Displacement at illegal point (20.8 -6.32 -6.44) set to (-1.98 -0.424 -1.82)
+Displacement at illegal point (20.9 -6.35 -6.58) set to (-3.77 0.0633 -2.23)
+Displacement at illegal point (20.2 -6.33 -6.04) set to (-1.05 0.617 -2.07)
+Displacement at illegal point (20.4 -6.35 -6.1) set to (-0.131 0.186 -0.829)
+Displacement at illegal point (20.6 -6.32 -6.18) set to (-0.429 -0.228 0.0577)
+Displacement at illegal point (20.7 -6.31 -6.3) set to (-2.73 -0.306 -2.51)
+Displacement at illegal point (21 -5.67 -6.77) set to (-2.07 -0.611 -1.05)
+Displacement at illegal point (20.9 -5.65 -6.58) set to (-0.834 -0.171 -0.124)
+Displacement at illegal point (20.8 -5.68 -6.44) set to (0.0419 0.234 -0.412)
+Displacement at illegal point (20.2 -5.66 -6.04) set to (-1.07 -0.584 -2.09)
+Displacement at illegal point (20.4 -5.66 -6.1) set to (-0.153 -0.171 -0.825)
+Displacement at illegal point (20.6 -5.67 -6.18) set to (-0.446 0.22 0.0712)
+Displacement at illegal point (3.8 0.311 -7.7) set to (-1.84 0.154 -1.84)
+Displacement at illegal point (3.68 0.322 -7.56) set to (-0.542 0.101 -0.704)
+Displacement at illegal point (3.61 0.345 -7.42) set to (3.07 -1.58 -0.981)
+Displacement at illegal point (3.94 0.322 -7.82) set to (-0.704 0.101 -0.542)
+Displacement at illegal point (4.08 0.345 -7.89) set to (-0.981 -1.58 3.07)
+Displacement at illegal point (3.5 0.358 -7) set to (1.26 -2.6 -0.0605)
+Displacement at illegal point (3.54 0.328 -7.23) set to (1.11 -1.11 -0.298)
+Displacement at illegal point (3.6 0.346 -6.58) set to (0.956 -1.7 2.17)
+Displacement at illegal point (3.54 0.329 -6.77) set to (0.575 -1.15 0.562)
+Displacement at illegal point (3.68 0.321 -6.44) set to (-0.0187 -0.275 0.335)
+Displacement at illegal point (4.5 0.358 -8) set to (-0.0579 -2.59 1.26)
+Displacement at illegal point (4.27 0.328 -7.96) set to (-0.297 -1.11 1.11)
+Displacement at illegal point (4.92 0.346 -7.9) set to (2.16 -1.7 0.952)
+Displacement at illegal point (5.06 0.321 -7.82) set to (0.333 -0.272 -0.019)
+Displacement at illegal point (4.73 0.329 -7.96) set to (0.562 -1.14 0.574)
+Displacement at illegal point (5.32 0.322 -7.56) set to (-1.98 0.439 1.81)
+Displacement at illegal point (5.39 0.345 -7.42) set to (-3.91 -1.47 -0.139)
+Displacement at illegal point (5.46 0.328 -7.23) set to (-0.823 -2.13 -1.2)
+Displacement at illegal point (5.5 0.358 -7) set to (-0.835 -1.92 1.16)
+Displacement at illegal point (5.2 0.31 -7.7) set to (-2.48 0.144 2.53)
+Displacement at illegal point (4.28 0.327 -6.03) set to (2.04 -3.86 -3.29)
+Displacement at illegal point (4.09 0.342 -6.1) set to (0.5 -1.36 -1.21)
+Displacement at illegal point (3.94 0.32 -6.17) set to (0.625 -0.306 -0.0333)
+Displacement at illegal point (4.92 0.341 -6.11) set to (-1.01 -2.41 -0.125)
+Displacement at illegal point (4.74 0.327 -6.04) set to (-0.581 -5.26 0.162)
+Displacement at illegal point (5.06 0.32 -6.18) set to (-0.713 -0.512 0.287)
+Displacement at illegal point (5.46 0.329 -6.77) set to (-1.96 -0.445 -0.749)
+Displacement at illegal point (5.4 0.346 -6.58) set to (-0.791 -0.118 -0.0331)
+Displacement at illegal point (5.32 0.321 -6.44) set to (0.0741 0.261 -0.399)
+Displacement at illegal point (19.1 5.85 -7.42) set to (0.829 -0.186 0.131)
+Displacement at illegal point (19.2 5.82 -7.56) set to (-0.0577 0.228 0.429)
+Displacement at illegal point (19.3 5.19 -7.7) set to (-0.206 -0.182 0.416)
+Displacement at illegal point (19.2 5.18 -7.56) set to (0.00457 -0.0985 0.0482)
+Displacement at illegal point (19.1 5.15 -7.42) set to (3.11 0.161 1.65)
+Displacement at illegal point (19.4 5.82 -7.82) set to (1.82 0.425 1.98)
+Displacement at illegal point (19.6 5.85 -7.9) set to (2.23 -0.063 3.77)
+Displacement at illegal point (19.3 5.81 -7.7) set to (2.51 0.306 2.73)
+Displacement at illegal point (19.2 5.82 -6.44) set to (1.98 0.441 -1.82)
+Displacement at illegal point (19.1 5.85 -6.58) set to (3.76 -0.0533 -2.23)
+Displacement at illegal point (19.3 5.19 -6.3) set to (0.28 -0.261 -1.07)
+Displacement at illegal point (19.2 5.18 -6.44) set to (0.171 -0.141 -0.255)
+Displacement at illegal point (19.1 5.16 -6.58) set to (3.16 0.143 -1.7)
+Displacement at illegal point (19.6 5.85 -6.11) set to (0.119 -0.173 -0.83)
+Displacement at illegal point (19.4 5.82 -6.18) set to (0.423 0.24 0.0571)
+Displacement at illegal point (19.3 5.81 -6.3) set to (2.73 0.316 -2.52)
+Displacement at illegal point (20.9 5.85 -6.58) set to (-0.83 -0.187 -0.13)
+Displacement at illegal point (20.8 5.82 -6.44) set to (0.0567 0.227 -0.428)
+Displacement at illegal point (20.8 5.18 -6.44) set to (-2 -0.422 -1.8)
+Displacement at illegal point (20.7 5.19 -6.3) set to (-2.76 -0.315 -2.51)
+Displacement at illegal point (20.9 5.15 -6.58) set to (-3.77 0.0609 -2.22)
+Displacement at illegal point (20.6 5.82 -6.18) set to (-1.82 0.419 -1.98)
+Displacement at illegal point (20.4 5.85 -6.1) set to (-2.23 -0.0636 -3.77)
+Displacement at illegal point (20.7 5.81 -6.3) set to (-2.51 0.304 -2.73)
+Displacement at illegal point (30 -1.86 -2.47) set to (-0.456 2.75 1.7)
+Displacement at illegal point (30 -1.63 -2.47) set to (-0.823 -3.3 2.48)
+Displacement at illegal point (30 -1.75 -2.6) set to (3.5e-05 0.0323 3.1)
+Displacement at illegal point (30 -0.522 -0.475) set to (-2.65 -2.66 1.44)
+Displacement at illegal point (25.3 -13 1.8) set to (-5.01 0.211 2.1)
+Displacement at illegal point (25.4 -9.94 1.8) set to (-3.38 1.09 0.596)
+Displacement at illegal point (30 0.832 0.537) set to (-0.937 -4.06 0.843)
+Displacement at illegal point (25.4 9.94 1.8) set to (-3.38 -1.09 0.596)
+Displacement at illegal point (25.3 13 1.8) set to (-5.01 -0.211 2.1)
+Displacement at illegal point (19.9 3.11 -4.4) set to (-1.87 4.33 1.64)
+Displacement at illegal point (19.9 4.32 -5.91) set to (0.107 3.88 3.62)
+Displacement at illegal point (29.9 -1.49 -1.76) set to (6 1.37 -0.0982)
+Displacement at illegal point (30 -1.54 -1.96) set to (-2.4 -1.33 1.49)
+Displacement at illegal point (20 -2.55 -2.95) set to (-4.23 1.32 1.1)
+Displacement at illegal point (29.8 -0.509 1.75) set to (4.75 -1.22 -0.434)
+Displacement at illegal point (4.08 -0.345 -7.89) set to (-2.24 1.58 0.981)
+Displacement at illegal point (3.94 -0.322 -7.82) set to (-0.367 0.226 -0.0054)
+Displacement at illegal point (4.27 -0.328 -7.96) set to (-1.73 2.16 0.0905)
+Displacement at illegal point (4.5 -0.358 -8) set to (1.03 1.92 0.651)
+Displacement at illegal point (5.06 -0.321 -7.82) set to (-1.82 -0.429 1.98)
+Displacement at illegal point (4.92 -0.346 -7.9) set to (0.067 1.58 3.89)
+Displacement at illegal point (4.73 -0.329 -7.96) set to (0.31 0.945 1.16)
+Displacement at illegal point (19.9 -2.45 -3.29) set to (-1.61 -1.76 2.27)
+Displacement at illegal point (19.9 -2.67 -3.56) set to (-0.793 0.183 1.23)
+Displacement at illegal point (19.9 -2.57 -3.43) set to (1.44 -1.72 2.14)
+Displacement at illegal point (3.61 -0.345 -7.42) set to (0.981 1.58 -2.24)
+Displacement at illegal point (3.68 -0.322 -7.56) set to (-0.00545 0.226 -0.367)
+Displacement at illegal point (3.8 -0.311 -7.7) set to (1.8 0.0616 1.8)
+Displacement at illegal point (3.5 -0.358 -7) set to (1.26 2.6 -0.0606)
+Displacement at illegal point (3.54 -0.328 -7.23) set to (0.582 1.11 -0.614)
+Displacement at illegal point (3.94 -0.32 -6.17) set to (1.85 -0.27 -1.97)
+Displacement at illegal point (3.8 -0.309 -6.3) set to (0.262 -0.201 -1.09)
+Displacement at illegal point (4.09 -0.342 -6.1) set to (3 2.48 -3.09)
+Displacement at illegal point (3.68 -0.321 -6.44) set to (0.161 -0.108 -0.274)
+Displacement at illegal point (3.6 -0.346 -6.58) set to (3.28 1.69 0.576)
+Displacement at illegal point (3.54 -0.329 -6.77) set to (1.16 1.14 0.164)
+Displacement at illegal point (5.39 -0.345 -7.42) set to (-0.982 1.58 -2.25)
+Displacement at illegal point (5.32 -0.322 -7.56) set to (0.00271 0.232 -0.369)
+Displacement at illegal point (5.46 -0.328 -7.23) set to (-0.0905 2.16 -1.73)
+Displacement at illegal point (5.5 -0.358 -7) set to (-0.652 1.92 1.03)
+Displacement at illegal point (5.2 -0.31 -7.7) set to (-2.53 -0.154 2.47)
+Displacement at illegal point (4.28 -0.327 -6.03) set to (1.46 5.29 -1.27)
+Displacement at illegal point (4.92 -0.341 -6.11) set to (-1.01 2.42 -0.0988)
+Displacement at illegal point (5.06 -0.32 -6.18) set to (-0.712 0.517 0.295)
+Displacement at illegal point (4.74 -0.327 -6.04) set to (-0.581 5.26 0.221)
+Displacement at illegal point (5.32 -0.321 -6.44) set to (-1.97 -0.437 -1.82)
+Displacement at illegal point (5.4 -0.346 -6.58) set to (-3.89 1.57 0.0634)
+Displacement at illegal point (5.46 -0.329 -6.77) set to (-1.16 0.944 0.308)
+Displacement at illegal point (5.2 -0.309 -6.3) set to (-2.82 -0.0637 -2.44)
+Displacement at illegal point (45 7.98 8.37) set to (-2.41 -3.03 -5.14)
+Displacement at illegal point (29.9 -1.23 -1.27) set to (5.69 1.72 -0.606)
+Displacement at illegal point (24.4 -33.7 1.79) set to (-2.39 2.24 0.159)
+Displacement at illegal point (24.7 -27.7 1.8) set to (-3.19 1.01 0.426)
+Displacement at illegal point (24.7 27.7 1.8) set to (-3.19 -1.01 0.426)
+Displacement at illegal point (24.4 33.7 1.79) set to (-2.39 -2.24 0.159)
+Displacement at illegal point (29.9 -1.49 3.48) set to (6.07 -1.17 -1.11)
+Displacement at illegal point (19.9 3.8 -5.28) set to (0.623 1.52 -2.83)
+Displacement at illegal point (19.9 4.39 -5.59) set to (-1.02 -5.01 -3.18)
+Displacement at illegal point (19.9 3.54 -4.95) set to (-0.434 2.22 2.93)
+Displacement at illegal point (19.9 3.32 -4.68) set to (-3.01 2.38 1.82)
+Displacement at illegal point (19.9 3.44 -4.79) set to (-2.99 -1.55 -0.329)
+Displacement at illegal point (19.9 3.54 -4.51) set to (-1.08 -2.68 -2.6)
+Displacement at illegal point (20.7 -6.31 -7.7) set to (-2.05 -0.246 2.05)
+Displacement at illegal point (20.7 -5.69 -6.3) set to (-2.07 0.238 -2.04)
+Displacement at illegal point (3.8 0.309 -6.3) set to (2.12 -0.101 -1.84)
+Displacement at illegal point (5.2 0.309 -6.3) set to (-2.14 0.00695 -1.97)
+Displacement at illegal point (19.9 -4.78 -6.21) set to (0.473 -4.31 3.64)
+Displacement at illegal point (19.9 -3.32 -3.95) set to (0.403 0.712 -1.55)
+Displacement at illegal point (19.9 2.78 -3.96) set to (7.26 2.73 2.49)
+Displacement at illegal point (19.9 2.94 -3.8) set to (6.95 -3.08 -2.93)
+Displacement at illegal point (19.9 3.18 -4.08) set to (0.374 -3.87 -3.8)
+Displacement at illegal point (19.9 -3.21 -3.8) set to (3.66 1.82 -2.37)
+Displacement at illegal point (19.8 5.23 -6.77) set to (-0.173 -0.805 -0.873)
+Displacement at illegal point (19.9 -3.94 -4.72) set to (2.08 -0.986 2.89)
+Displacement at illegal point (19.9 -3.78 -4.95) set to (0.434 -4.29 3.57)
+Displacement at illegal point (20 2.3 -2.96) set to (-3.69 -2.74 1.83)
+Displacement at illegal point (19.9 2.22 -3.26) set to (-1.22 0.509 3.05)
+Displacement at illegal point (19.9 2.33 -3.41) set to (2.69 1.98 3.22)
+Displacement at illegal point (19.9 -3.43 -4.07) set to (2.67 1.84 -1.52)
+Displacement at illegal point (19.9 2.56 -3.7) set to (7.03 3.03 2.82)
+Displacement at illegal point (30 -0.491 1.55) set to (-3.09 1.36 0.408)
+Displacement at illegal point (20.7 5.81 -7.7) set to (-2.05 0.252 2.05)
+Displacement at illegal point (19.9 -5.31 -6.46) set to (-0.384 0.697 -1.64)
+Displacement at illegal point (19.9 -5.21 -6.3) set to (3.12 1.99 -2.6)
+Displacement at illegal point (19.8 5.37 -6.9) set to (0.586 -1.35 0.212)
+Displacement at illegal point (19.9 5.38 -6.83) set to (-0.554 -1.33 -0.597)
+Displacement at illegal point (19.9 5.4 -6.9) set to (-2.41 -0.689 1.18)
+Displacement at illegal point (19.8 4.78 -6.23) set to (0.618 2.59 1.96)
+Displacement at illegal point (19.8 4.84 -6.41) set to (-3.02 3.08 2.57)
+Displacement at illegal point (19.9 3.23 -4.52) set to (-2.92 0.166 -0.896)
+Displacement at illegal point (30 -1.44 3.06) set to (-2.93 2.52 1.36)
+Displacement at illegal point (19.9 3.96 -5.48) set to (-0.485 0.906 -1.17)
+Displacement at illegal point (19.9 4.11 -5.64) set to (-0.034 2.77 2.08)
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+
+shrinkMeshMedialDistance : Smoothing using Medial Axis ...
+shrinkMeshMedialDistance : Reduce layer thickness at 13458 nodes where thickness to medial axis distance is large 
+shrinkMeshDistance : Removing isolated regions ...
+Number isolated points extrusion stopped : 964
+shrinkMeshDistance : Smoothing field ...
+    Iteration 0   residual 0.0736
+shrinkMeshMedialDistance : Moving mesh ...
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 150928
+    faces with face pyramid volume < 1e-13                 : 17829
+    faces with concavity > 80  degrees                     : 747
+    faces with skewness > 4   (internal) or 20  (boundary) : 733
+    faces with interpolation weights (0..1)  < 0.02        : 262
+    faces with volume ratio of neighbour cells < 0.01      : 161
+    faces with face twist < 0.02                           : 5128
+    faces on cells with determinant < 0.001                : 1114
+Iteration 1
+Moving mesh using displacement scaling : min:0.75  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 131433
+    faces with face pyramid volume < 1e-13                 : 16772
+    faces with concavity > 80  degrees                     : 806
+    faces with skewness > 4   (internal) or 20  (boundary) : 798
+    faces with interpolation weights (0..1)  < 0.02        : 216
+    faces with volume ratio of neighbour cells < 0.01      : 181
+    faces with face twist < 0.02                           : 6138
+    faces on cells with determinant < 0.001                : 903
+Iteration 2
+Moving mesh using displacement scaling : min:0.562  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 106698
+    faces with face pyramid volume < 1e-13                 : 15907
+    faces with concavity > 80  degrees                     : 977
+    faces with skewness > 4   (internal) or 20  (boundary) : 749
+    faces with interpolation weights (0..1)  < 0.02        : 191
+    faces with volume ratio of neighbour cells < 0.01      : 403
+    faces with face twist < 0.02                           : 6702
+    faces on cells with determinant < 0.001                : 851
+Iteration 3
+Displacement scaling for error reduction set to 0.
+Moving mesh using displacement scaling : min:0.422  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 77137
+    faces with face pyramid volume < 1e-13                 : 11902
+    faces with concavity > 80  degrees                     : 1101
+    faces with skewness > 4   (internal) or 20  (boundary) : 734
+    faces with interpolation weights (0..1)  < 0.02        : 730
+    faces with volume ratio of neighbour cells < 0.01      : 719
+    faces with face twist < 0.02                           : 6855
+    faces on cells with determinant < 0.001                : 977
+Iteration 4
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 7409
+    faces with face pyramid volume < 1e-13                 : 1121
+    faces with concavity > 80  degrees                     : 361
+    faces with skewness > 4   (internal) or 20  (boundary) : 136
+    faces with interpolation weights (0..1)  < 0.02        : 16
+    faces with volume ratio of neighbour cells < 0.01      : 41
+    faces with face twist < 0.02                           : 1205
+    faces on cells with determinant < 0.001                : 50
+Iteration 5
+Moving mesh using displacement scaling : min:0  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 42
+    faces with face pyramid volume < 1e-13                 : 37
+    faces with concavity > 80  degrees                     : 4
+    faces with skewness > 4   (internal) or 20  (boundary) : 4
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 4
+    faces with face twist < 0.02                           : 4
+    faces on cells with determinant < 0.001                : 1
+shrinkMeshMedialDistance : Finished moving mesh ...
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+truncateDisplacement : Unextruded 6 faces due to non-consecutive vertices being extruded.
+truncateDisplacement : Unextruded 0 faces due to stringed edges with inconsistent extrusion.
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+truncateDisplacement : Unextruded 2 faces due to non-consecutive vertices being extruded.
+truncateDisplacement : Unextruded 0 faces due to stringed edges with inconsistent extrusion.
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+truncateDisplacement : Unextruded 0 faces due to non-consecutive vertices being extruded.
+truncateDisplacement : Unextruded 0 faces due to stringed edges with inconsistent extrusion.
+
+Setting up information for layer truncation ...
+
+Checking mesh with layer ...
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 42
+    faces with face pyramid volume < 1e-13                 : 37
+    faces with concavity > 80  degrees                     : 4
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 4
+    faces with volume ratio of neighbour cells < 0.01      : 4
+    faces with face twist < 0.02                           : 6
+    faces on cells with determinant < 0.001                : 1
+Detected 98 illegal faces (concave, zero area or negative cell pyramid volume)
+Extruding 5431 out of 29832 faces (18.2%). Removed extrusion at 15 faces.
+Added 5469 out of 77930 cells (7.02%).
+
+
+Layer addition iteration 1
+--------------------------
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+
+Determining displacement for added points according to pointNormal ...
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+
+shrinkMeshMedialDistance : Smoothing using Medial Axis ...
+shrinkMeshMedialDistance : Reduce layer thickness at 149 nodes where thickness to medial axis distance is large 
+shrinkMeshDistance : Removing isolated regions ...
+Number isolated points extrusion stopped : 25
+shrinkMeshDistance : Smoothing field ...
+    Iteration 0   residual 0.000456
+shrinkMeshMedialDistance : Moving mesh ...
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+shrinkMeshMedialDistance : Successfully moved mesh
+shrinkMeshMedialDistance : Finished moving mesh ...
+Prevented extrusion on 0 coupled patch points during syncPatchDisplacement.
+truncateDisplacement : Unextruded 0 faces due to non-consecutive vertices being extruded.
+truncateDisplacement : Unextruded 0 faces due to stringed edges with inconsistent extrusion.
+
+Setting up information for layer truncation ...
+
+Checking mesh with layer ...
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Detected 0 illegal faces (concave, zero area or negative cell pyramid volume)
+Extruding 5366 out of 29832 faces (18%). Removed extrusion at 0 faces.
+Added 5366 out of 77930 cells (6.89%).
+Edge intersection testing:
+    Number of edges             : 295548
+    Number of edges to retest   : 0
+    Number of intersected edges : 24186
+Writing 5366 added cells to cellSet addedCells
+Writing 0 faces inside added layer to faceSet layerFaces
+Layer mesh : cells:86889  faces:295548  points:122800
+Cells per refinement level:
+    0	25189
+    1	5935
+    2	16440
+    3	39325
+Writing mesh to time constant
+Wrote mesh in = 9.9 s.
+Layers added in = 9.9 s.
+Finished meshing in = 60.5 s.
+End
+
